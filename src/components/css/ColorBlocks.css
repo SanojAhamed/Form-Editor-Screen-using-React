@@ -1,0 +1,35 @@
+.color-blocks {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100%; 
+  margin-right: 100px;  
+  flex-wrap: wrap;   
+  padding: 20px;   
+}  
+
+.decorative-image {  
+  width: 100%;   
+  max-width: 300px;   
+  height: auto;   
+  margin: 10px;   
+  flex: 1 1 120px;   
+}  
+
+@media (max-width: 768px) {  
+  .color-blocks {  
+    flex-direction: column;   
+  }  
+
+  .decorative-image {  
+    margin-right: 0;   
+    max-width: 100%;   
+  }  
+}  
+
+@media (max-width: 480px) {  
+  .decorative-image {  
+    max-width: 90%;   
+    margin: 5px;   
+  }  
+}
